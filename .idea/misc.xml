@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/lh/Desktop/anzhuo/kotlin-note-master/app/src/main/res/layout/activity_main.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/lh/Desktop/anzhuo/kotlin-note-master/app/src/main/res/layout/activity_write_note.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/lh/Desktop/anzhuo/kotlin-note-master/app/src/main/res/layout/item_note.xml" value="0.17097264437689969" />
+        <entry key="..\:/Users/lh/Desktop/anzhuo/kotlin-note-master/app/src/main/res/layout/item_note_grid.xml" value="0.36614583333333334" />
+        <entry key="..\:/kotlin-note-master/app/src/main/res/layout/activity_main.xml" value="0.17806484295845998" />
+        <entry key="..\:/kotlin-note-master/app/src/main/res/layout/activity_write_note.xml" value="0.17806484295845998" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

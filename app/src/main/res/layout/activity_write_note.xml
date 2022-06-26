@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_f9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/b20"
+        android:background="@drawable/frame_with_gray_background_r10_b0">
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入标题"
+            android:padding="@dimen/b20"
+            android:text=""
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/b28" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/b20"
+        android:background="@drawable/frame_with_gray_background_r10_b0">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="姚一川"
+            android:padding="@dimen/b20"
+            android:text=""
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/b28" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/b20"
+        android:background="@drawable/frame_with_gray_background_r10_b0"
+        android:minHeight="@dimen/b200">
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="请输入内容"
+            android:padding="@dimen/b20"
+            android:text=""
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/b28" />
+    </LinearLayout>
+
+
+</LinearLayout>

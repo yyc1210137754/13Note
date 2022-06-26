@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/b540"
+    android:layout_gravity="bottom"
+    android:background="@color/bottom_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/b30"
+            android:paddingTop="@dimen/b20"
+            android:paddingRight="@dimen/b30"
+            android:paddingBottom="@dimen/b20"
+            android:text="取消"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/b30" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/b30"
+            android:paddingTop="@dimen/b20"
+            android:paddingRight="@dimen/b30"
+            android:paddingBottom="@dimen/b20"
+            android:text="请选择分类"
+            android:textColor="@color/color_gray_88"
+            android:textSize="@dimen/b30" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/b30"
+            android:paddingTop="@dimen/b20"
+            android:paddingRight="@dimen/b30"
+            android:paddingBottom="@dimen/b20"
+            android:text="确定"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/b30" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_title"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <cn.dujc.widget.wheelpicker.WheelPicker
+            android:id="@+id/wheelpicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            app:widget_wheel_atmospheric="true"
+            app:widget_wheel_curtain_color="@color/color_black_alpha"
+            app:widget_wheel_ellipsize="end"
+            app:widget_wheel_item_align="center"
+            app:widget_wheel_item_text_color="@color/button_text_color"
+            app:widget_wheel_item_text_size="@dimen/b30"
+            app:widget_wheel_selected_item_text_color="@color/text_color1" />
+    </LinearLayout>
+</RelativeLayout>

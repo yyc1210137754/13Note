@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.kotlinnote.widget.ItemSwipe xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/b20"
+        android:paddingTop="@dimen/b20"
+        android:paddingRight="@dimen/b20">
+
+        <TextView
+            android:id="@+id/tv_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="1111"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/b32"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_note_last_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-06-26"
+                android:textColor="@color/color_gray_bbb"
+                android:textSize="@dimen/b30" />
+
+            <TextView
+                android:id="@+id/tv_note_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/b20"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="2020-06-26"
+                android:textColor="@color/color_gray_dd"
+                android:textSize="@dimen/b30" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/b1"
+            android:layout_marginTop="@dimen/b20"
+            android:background="@color/color_line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="@dimen/b200"
+        android:layout_height="match_parent"
+        android:background="@color/color_red"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/b30"
+        app:IamOutside="true" />
+
+</com.example.kotlinnote.widget.ItemSwipe>

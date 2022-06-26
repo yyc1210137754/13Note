@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemSwipe_Layout">
+        <attr name="IamOutside" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ItemSwipe">
+        <attr name="scrollerLimit" format="dimension" />
+        <attr name="scrollerEnable" format="boolean" />
+        <attr name="scrollerScale" format="float" />
+    </declare-styleable>
+</resources>

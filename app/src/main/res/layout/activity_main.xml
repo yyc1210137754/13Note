@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/b60"
+        android:layout_margin="@dimen/b20"
+        android:layout_marginBottom="@dimen/b20"
+        android:background="@drawable/rounded_gray_r15"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/b30"
+        android:paddingRight="@dimen/b30">
+
+        <EditText
+            android:id="@+id/edit_search_context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="输入需要搜索的内容"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="20"
+            android:textColorHint="@color/color_gray_c0"
+            android:textSize="@dimen/b24" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/b30"
+            android:layout_height="@dimen/b30"
+            android:layout_gravity="right|center_vertical"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/search_search" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/b20">
+
+        <ImageView
+            android:id="@+id/iv_switch_view"
+            android:layout_width="@dimen/b50"
+            android:layout_height="@dimen/b50"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_menu" />
+
+        <TextView
+            android:id="@+id/tv_order_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_down"
+            android:text="按编辑日期排序"
+            android:textColor="@color/color_godden_dark"
+            android:textSize="@dimen/b30" />
+
+        <ImageView
+            android:id="@+id/iv_down"
+            android:layout_width="@dimen/b30"
+            android:layout_height="@dimen/b30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_down_narrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/b1"
+        android:layout_marginLeft="@dimen/b20"
+        android:layout_marginRight="@dimen/b20"
+        android:background="@color/color_line" />
+
+    <include
+        layout="@layout/core_base_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/b80"
+        android:gravity="center_vertical"
+        android:padding="@dimen/b20">
+
+        <TextView
+            android:id="@+id/tv_note_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0个备忘录"
+            android:textSize="@dimen/b24"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_add_note"
+            android:layout_width="@dimen/b40"
+            android:layout_height="@dimen/b40"
+            android:src="@mipmap/icon_write_note" />
+    </LinearLayout>
+</LinearLayout>
